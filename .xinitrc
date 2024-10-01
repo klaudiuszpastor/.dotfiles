@@ -48,10 +48,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-VBoxClient-all &
-polybar & xrandr --newmode "2560x1440_165.00"  941.49  2560 2792 3080 3600  1440 1441 1444 1585  -HSync +Vsync
-xrandr --addmode Virtual1 "2560x1440_165.00"
-xrandr --output Virtual1 --mode "2560x1440_165.00" 
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
+#VBoxClient-all &
+polybar & 
+#xrandr --newmode "2560x1440_165.00"  941.49  2560 2792 3080 3600  1440 1441 1444 1585  -HSync +Vsync
+#xrandr --addmode Virtual1 "2560x1440_165.00"
+#xrandr --output Virtual1 --mode "2560x1440_165.00" 
 feh --bg-fill /home/claudius/wallpapers/fuji-mount.jpg
 wal -n -i /home/claudius/wallpapers/fuji.jpg
 picom &
