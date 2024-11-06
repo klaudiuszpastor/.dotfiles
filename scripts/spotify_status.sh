@@ -25,6 +25,6 @@ if [ "$status" == "Playing" ]; then
 elif [ "$status" == "Paused" ]; then
     echo " ❚❚ $artist - $title"  
 else
-    echo "⏹️ $artist - $title"   
+    echo "-----"   
 fi
 

@@ -58,6 +58,9 @@ fi
 #xrandr --output Virtual1 --mode "2560x1440_165.00" 
 #wal -n -i /home/claudius/wallpapers/fuji.jpg
 picom &
+#xrandr --output eDP-1 --mode 1920x1080 --below HDMI-1 --auto 
+#xrandr --output HDMI-1 --mode 2560x1440 --auto 
+xrandr --output HDMI-1 --mode 2560x1440 --above eDP-1 --auto
 feh --bg-fill /home/claudius/wallpapers/fuji-mount.jpg
 dwmblocks &
 exec dwm
