@@ -63,4 +63,5 @@ picom &
 xrandr --output HDMI-1 --mode 2560x1440 --above eDP-1 --auto
 feh --bg-fill /home/claudius/wallpapers/fuji-mount.jpg
 dwmblocks &
+flameshot &
 exec dwm
