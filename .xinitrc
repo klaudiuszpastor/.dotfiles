@@ -51,17 +51,28 @@ fi
 /usr/bin/pipewire &
 /usr/bin/pipewire-pulse &
 /usr/bin/pipewire-media-session &
+
+#
+# dwm configs 
+#
+
 #VBoxClient-all &
 #polybar & 
 #xrandr --newmode "2560x1440_165.00"  941.49  2560 2792 3080 3600  1440 1441 1444 1585  -HSync +Vsync
 #xrandr --addmode Virtual1 "2560x1440_165.00"
 #xrandr --output Virtual1 --mode "2560x1440_165.00" 
 #wal -n -i /home/claudius/wallpapers/fuji.jpg
-picom &
+# picom &
 #xrandr --output eDP-1 --mode 1920x1080 --below HDMI-1 --auto 
 #xrandr --output HDMI-1 --mode 2560x1440 --auto 
+# dwmblocks &
+# exec dwm
+
+#
+# i3 config
+#
+
 xrandr --output HDMI-1 --mode 2560x1440 --above eDP-1 --auto
 feh --bg-fill /home/claudius/wallpapers/fuji-mount.jpg
-dwmblocks &
 flameshot &
-exec dwm
+exec i3
